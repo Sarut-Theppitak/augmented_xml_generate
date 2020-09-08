@@ -11,30 +11,28 @@ Currently, only 3 types of augmentation is available.
 
 3.enhanced(ImageEnhance.Contrast(im).enhance(1.3))
 
+    One should change the input parameters under the __name__ == '__main__': in the script:
 
+    ori_img_folder >> path to original image folder
 
-One should change the input parameters under the __name__ == '__main__': in the script:
+    ori_csv >> full path of the proginal csv file
 
-ori_img_folder >> path to original image folder
+    aug_type >> augmentation type (curently only 3 : flipVer, flipHor, enhanced )
 
-ori_csv >> full path of the proginal csv file
+    out_folder >> Specify your output folder. The augmented img folder,the coresponding xml folder,and the coresponding csv file will be created in this folder.
 
-aug_type >> augmentation type (curently only 3 : flipVer, flipHor, enhanced )
-
-out_folder >> Specify your output folder. The augmented img folder,the coresponding xml folder,and the coresponding csv file will be created in this folder.
-
-procs >> number of processor to se (-1 means maximum processor available)
+    procs >> number of processor to se (-1 means maximum processor available)
 
 
 Ex:
 
-ori_img_folder = 'C:\\Users\\3978\\Desktop\\Faster-Rcnn\\inceptionV2_ais_s1_20200826\\data\\sample_img'
+    ori_img_folder = 'C:\\Users\\3978\\Desktop\\Faster-Rcnn\\inceptionV2_ais_s1_20200826\\data\\sample_img'
 
-ori_csv = 'C:\\Users\\3978\\Desktop\\Faster-Rcnn\\inceptionV2_ais_s1_20200826\\data\\sample.csv'
+    ori_csv = 'C:\\Users\\3978\\Desktop\\Faster-Rcnn\\inceptionV2_ais_s1_20200826\\data\\sample.csv'
 
-aug_type = 'flipVer'
+    aug_type = 'flipVer'
 
-out_folder = 'C:\\Users\\3978\\Desktop\\Faster-Rcnn\\inceptionV2_ais_s1_20200826\\data\\dummy'
+    out_folder = 'C:\\Users\\3978\\Desktop\\Faster-Rcnn\\inceptionV2_ais_s1_20200826\\data\\dummy'
 
-procs = -1   
+    procs = -1   
 
