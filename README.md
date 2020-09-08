@@ -5,11 +5,11 @@ This python scrpit takes the path to original images to generate augmented image
 
 Currently, only 3 types of augmentation is available.
 
--flipVer
+1.flipVer
 
--flipHor
+2.flipHor
 
--enhanced(ImageEnhance.Contrast(im).enhance(1.3))
+3.enhanced(ImageEnhance.Contrast(im).enhance(1.3))
 
 
 
