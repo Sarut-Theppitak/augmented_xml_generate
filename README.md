@@ -3,7 +3,7 @@ Generate augmented images and xml files from original images and an original CSV
 
 This python scrpit takes the path to original images to generate augmented images as well as takes a original csv file to make a new a set of xml files coresponding to the newly created images.
 
-Currently, only 3 types of augmentation is available.
+Currently, only 5 types of augmentation are available.
 
 1.flipVer
 
@@ -11,13 +11,17 @@ Currently, only 3 types of augmentation is available.
 
 3.enhanced(ImageEnhance.Contrast(im).enhance(1.3))
 
+4.rotate180
+
+5.random
+
     One should change the input parameters under the __name__ == '__main__': in the script:
 
     ori_img_folder >> path to original image folder
 
     ori_csv >> full path of the proginal csv file
 
-    aug_type >> augmentation type (curently only 3 : flipVer, flipHor, enhanced )
+    aug_type >> augmentation type (curently only 3 : flipVer, flipHor, enhanced, rotate180, random )
 
     out_folder >> Specify your output folder. The augmented img folder,the coresponding xml folder,and the coresponding csv file will be created in this folder.
 
