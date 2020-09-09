@@ -39,4 +39,10 @@ Ex:
     out_folder = 'C:\\Users\\3978\\Desktop\\Faster-Rcnn\\inceptionV2_ais_s1_20200826\\data\\dummy'
 
     procs = -1   
+    
+After running the script, 1 csv file and 2 folders are generated.
+
+1. A folder containing the augmented images with the name of image folder name + augmentation type. Ex. sample_img_filpver
+2. A folder containing the coresponding xml files with name of image folder name + augmentation type + '_xml' . Ex. sample_img_filpver_xml
+3. A CSV file (tensorflow object detection format) with the same nase as the first folder above. Ex. sample_img_filpver.csv
 
