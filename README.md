@@ -15,7 +15,7 @@ Currently, only 5 types of augmentation are available.
 
 5.random
 
-    One should change the input parameters under the __name__ == '__main__': in the script:
+One should change the input parameters under the __name__ == '__main__': in the script:
 
     ori_img_folder >> path to original image folder
 
